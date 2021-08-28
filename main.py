@@ -24,15 +24,15 @@ if __name__ == "__main__":
 
     train_dataset = YOLODataset(
         config=yolo.config,
-        dataset_list="data2/_annotations_train.txt",
-        image_path_prefix="data2/train/images",
+        dataset_list="data/_annotations_train.txt",
+        image_path_prefix="data/train/images",
         training=True,
     )
 
     val_dataset = YOLODataset(
         config=yolo.config,
-        dataset_list="data2/_annotations_valid.txt",
-        image_path_prefix="data2/valid/images",
+        dataset_list="data/_annotations_valid.txt",
+        image_path_prefix="data/valid/images",
         training=False,
     )
 
